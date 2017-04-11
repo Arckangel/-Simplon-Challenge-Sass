@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'geomanistregular';
+  src: url("../fonts/geomanist-regular-webfont.ttf") format("truetype"); }
+body {
+  font-family: 'geomanistregular';
+  background-image: url("../../img/background.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.contain {
+  width: 550px;
+  height: auto;
+  margin: 80px 40px 40px; }
+  .contain .logo {
+    width: 100%;
+    height: auto; }
+  .contain h1 {
+    color: #6944d3;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: normal; }
+    .contain h1 span {
+      font-weight: bold;
+      margin-right: 15px; }
+    .contain h1 a {
+      color: white;
+      font-size: 18px;
+      font-weight: normal;
+      margin-left: 5px; }
+      .contain h1 a:hover {
+        color: #d9d9d9; }
+  .contain p {
+    color: white;
+    text-align: justify;
+    font-size: 12px;
+    font-weight: bold; }
+  .contain button {
+    background-color: #6944d3;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    width: 180px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-right: 5px;
+    margin-top: 10px; }
+    .contain button .fa-home {
+      font-size: 18px; }
+    .contain button:hover {
+      background-color: #4727a4;
+      cursor: pointer; }
+
+.btnBas {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  right: 50%; }
+  .btnBas a {
+    color: white;
+    font-size: 20px; }
+    .btnBas a:hover {
+      color: #d9d9d9; }
+
+/*# sourceMappingURL=style.css.map */

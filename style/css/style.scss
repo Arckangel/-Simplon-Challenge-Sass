@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'geomanistregular';
+    src: url('../fonts/geomanist-regular-webfont.ttf') format('truetype'),;
+}
+$colTitre: rgb(105,68,211);
+$colBtn: rgb(105,68,211);
+$colTxt: rgb(255,255,255);
+$amount: 15;
+$colBtn2: darken($colBtn, $amount);
+$colTxt2: darken($colTxt, $amount);
+
+body {
+    font-family: 'geomanistregular';
+    background: {
+        image: url('../../img/background.png');
+        position: center;
+        size: cover;
+        attachment: fixed;
+    }
+}
+
+.contain {
+    width: 550px;
+    height: auto;
+    margin: 80px 40px 40px;
+
+    .logo {
+        width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        color: $colTitre;
+        text-transform: uppercase;
+        font: {
+            size: 28px;
+            weight: normal;
+        }
+
+        span {
+            font-weight: bold;
+            margin-right: 15px;
+        }
+
+        a {
+            color: $colTxt;
+            font-size: 18px;
+            font-weight: normal;
+            margin-left: 5px;
+
+            &:hover{
+                color: $colTxt2;
+            }
+        }
+
+    }
+
+    p {
+        color: $colTxt;
+        text-align: justify;
+        font: {
+            size: 12px;
+            weight: bold;
+        }
+    }
+
+    button {
+        background-color: $colBtn;
+        color: $colTxt;
+        font-size: 16px;
+        text-align: center;
+        border: none;
+        width: 180px;
+        padding: {
+            top: 8px;
+            bottom: 8px;
+        }
+        margin: {
+            right: 5px;
+            top: 10px;
+        }
+
+        .fa-home {
+            font-size: 18px;
+        }
+        &:hover{
+            background-color: $colBtn2;
+            cursor:  pointer;
+        }
+    }
+}
+
+.btnBas {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    right: 50%;
+
+    a {
+        color: $colTxt;
+        font-size: 20px;
+
+        &:hover{
+            color: $colTxt2;
+        }
+    }
+}
